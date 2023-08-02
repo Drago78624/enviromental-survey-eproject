@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Login</title>
   </head>
   <body>
-    <header>
+    <header class="shadow-lg">
       <div class="navbar bg-base-100 container mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
@@ -42,7 +41,9 @@
               <li><a>Item 3</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a class="btn btn-ghost normal-case text-xl" href="/index.html"
+            >daisyUI</a
+          >
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -59,11 +60,54 @@
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+        <div class="navbar-end flex gap-2">
+          <a class="btn btn-info btn-outline" href="/pages/register.html"
+            >Register</a
+          >
+          <a class="btn btn-info" href="/pages/login.html">Login</a>
         </div>
       </div>
     </header>
+    <div
+      class="container mx-auto flex-col flex min-h-[90vh] justify-center items-center"
+    >
+      <div class="mb-12">
+        <h1 class="text-center text-3xl md:text-5xl mb-2 font-semibold">
+          Welcome back to Honolulu!
+        </h1>
+        <p class="text-center text-md md:text-xl">
+          Log in to participate in surveys.
+        </p>
+      </div>
+      <form
+        id="loginForm"
+        class="sm:w-[300px] md:w-[350px] lg:w-[400px] mx-auto"
+      >
+        <div class="form-control w-full max-w-2xl mb-3">
+          <input
+            type="text"
+            id="email"
+            placeholder="Email Address"
+            class="input input-bordered w-full shadow-lg"
+          />
+          <p id="emailError" class="text-error mt-1"></p>
+        </div>
+        <div class="form-control w-full max-w-2xl mb-3">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            class="input input-bordered w-full shadow-lg"
+          />
+          <p id="passwordError" class="text-error mt-1"></p>
+        </div>
+        <div class="form-control w-full max-w-2xl mb-3">
+          <button class="w-full btn btn-info shadow-lg">Login</button>
+        </div>
+      </form>
+    </div>
+
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/form-validation-login.js"></script>
   </body>
 </html>

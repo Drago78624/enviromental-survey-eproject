@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <header class="shadow-lg">
+      <div class="navbar bg-base-100 container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>FAQ</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="/index.html"
+            >daisyUI</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li tabindex="0">
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex gap-2">
+          <a class="btn btn-info btn-outline" href="/pages/register.html"
+            >Register</a
+          >
+          <a class="btn btn-info" href="/pages/login.html">Login</a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="container mx-auto flex-col flex min-h-[90vh] justify-center items-center"
+    >
+      <div class="mb-12">
+        <h1 class="text-center text-3xl md:text-5xl mb-2 font-semibold">
+          Join Our Community!
+        </h1>
+        <p class="text-center text-md md:text-xl">
+          Register now to participate in surveys and competitions.
+        </p>
+      </div>
+      <form
+        id="registerForm"
+        class="sm:w-[300px] md:w-[350px] lg:w-[400px] mx-auto"
+      >
+        <div class="form-control w-full max-w-2xl mb-3">
+          <input
+            type="text"
+            placeholder="Email Address"
+            class="input input-bordered w-full shadow-lg"
+            id="email"
+          />
+          <p id="emailError" class="text-error mt-1"></p>
+        </div>
+        <div class="form-control w-full max-w-2xl mb-3">
+          <input
+            type="password"
+            placeholder="Password"
+            class="input input-bordered w-full shadow-lg"
+            id="password"
+          />
+          <p id="passwordError" class="text-error mt-1"></p>
+        </div>
+        <div class="form-control w-full max-w-2xl mb-3">
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            class="input input-bordered w-full shadow-lg"
+            id="confirmPassword"
+          />
+          <p id="confirmPasswordError" class="text-error mt-1"></p>
+        </div>
+        <div class="form-control w-full max-w-2xl mb-3">
+          <button class="w-full btn btn-info shadow-lg">Register</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/form-validation-register.js"></script>
+  </body>
+</html>
