@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Document</title>
   </head>
   <body>
     <header class="shadow-lg">
@@ -48,6 +48,7 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/pages/support.html">Support</a></li>
             <li tabindex="0">
               <details>
                 <summary>Parent</summary>
@@ -68,55 +69,49 @@
         </div>
       </div>
     </header>
-    <div
-      class="container mx-auto flex-col flex min-h-[90vh] justify-center items-center"
-    >
-      <div class="mb-12">
-        <h1 class="text-center text-3xl md:text-5xl mb-2 font-semibold">
-          Join Our Community!
-        </h1>
-        <p class="text-center text-md md:text-xl">
-          Register now to participate in surveys and competitions.
+    <div class="min-h-[90vh] flex items-center justify-center px-2">
+      <div
+        class="w-full max-w-4xl rounded px-8 py-6 flex flex-col lg:flex-row gap-4"
+      >
+      <div class="w-full p-6 lg:flex-[2] mt-4 sm:mt-0 text-lg bg-primary text-gray-800">
+        <h2 class="text-3xl font-semibold mb-4">Contact Details</h2>
+        <p class="mb-2"><strong>Email:</strong> contact@example.com</p>
+        <p class="mb-2"><strong>Phone:</strong> +1 (123) 456-7890</p>
+        <p class="mb-2">
+          <strong>Address:</strong> 123 Main Street, City, Country
         </p>
       </div>
-      <form
-        id="registerForm"
-        class="sm:w-[300px] md:w-[350px] lg:w-[400px] mx-auto"
-      >
-        <div class="form-control w-full max-w-2xl mb-3">
-          <input
-            type="text"
-            placeholder="Email Address"
-            class="input input-bordered w-full shadow-lg"
-            id="email"
-          />
-          <p id="emailError" class="text-error mt-1"></p>
-        </div>
-        <div class="form-control w-full max-w-2xl mb-3">
-          <input
-            type="password"
-            placeholder="Password"
-            class="input input-bordered w-full shadow-lg"
-            id="password"
-          />
-          <p id="passwordError" class="text-error mt-1"></p>
-        </div>
-        <div class="form-control w-full max-w-2xl mb-3">
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            class="input input-bordered w-full shadow-lg"
-            id="confirmPassword"
-          />
-          <p id="confirmPasswordError" class="text-error mt-1"></p>
-        </div>
-        <div class="form-control w-full max-w-2xl mb-3">
-          <button class="w-full btn btn-primary shadow-lg">Register</button>
-        </div>
-      </form>
+        <form class="w-full sm:w-2/3 p-6 mx-auto lg:flex-[4]">
+          <h1 class="text-3xl font-semibold mb-6 text-center">Contact Us</h1>
+          <div class="form-control w-full max-w-2xl mb-3">
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="input input-bordered w-full shadow-lg"
+            />
+            <p id="emailError" class="text-error mt-1"></p>
+          </div>
+          <div class="form-control w-full max-w-2xl mb-3">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="input input-bordered w-full shadow-lg"
+            />
+            <p id="emailError" class="text-error mt-1"></p>
+          </div>
+          <div class="form-control w-full max-w-2xl mb-3">
+            <textarea
+              class="textarea textarea-bordered w-full h-32 shadow-lg"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <button type="submit" class="btn btn-primary shadow-lg">Send Message</button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script type="module" src="/main.js"></script>
-    <script type="module" src="/js/form-validation-register.js"></script>
   </body>
 </html>
