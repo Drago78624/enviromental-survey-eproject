@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="shadow-lg">
-      <div class="navbar bg-base-100 container mx-auto">
+      <div class="navbar bg-base-100 w-full lg:container mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -28,40 +28,33 @@
             </label>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              class="menu menu-sm dropdown-content mt-3 z-30 p-2 shadow-lg bg-base-100 rounded-box w-52"
             >
-              <li><a>FAQ</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+              <li class="mb-2"><a href="/pages/faq.html">FAQ</a></li>
+              <li class="mb-2"><a href="/pages/support.html">Support</a></li>
+              <li class="mb-2"><a>Survey Board</a></li>
+              <li class="mb-2"><a>Profile Edit</a></li>
+              <div class="gap-2 flex sm:hidden">
+                <a class="btn btn-primary btn-outline" href="/pages/register.html"
+                  >Register</a
+                >
+                <a class="btn btn-primary" href="/pages/login.html">Login</a>
+              </div>
             </ul>
           </div>
           <a class="btn btn-ghost normal-case text-xl" href="/index.html"
-            >daisyUI</a
+            >Enviromental Surveys</a
           >
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a href="/pages/faq.html">FAQ</a></li>
             <li><a href="/pages/support.html">Support</a></li>
-            <li tabindex="0">
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
+            <li><a>Survey Board</a></li>
+            <li><a>Profile Edit</a></li>
           </ul>
         </div>
-        <div class="navbar-end flex gap-2">
+        <div class="navbar-end gap-2 hidden sm:flex">
           <a class="btn btn-primary btn-outline" href="/pages/register.html"
             >Register</a
           >

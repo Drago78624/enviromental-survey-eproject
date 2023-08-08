@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="shadow-lg">
-      <div class="navbar bg-base-100 container mx-auto">
+      <div class="navbar bg-base-100 w-full lg:container mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -28,40 +28,33 @@
             </label>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              class="menu menu-sm dropdown-content mt-3 z-30 p-2 shadow-lg bg-base-100 rounded-box w-52"
             >
-              <li><a>FAQ</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+              <li class="mb-2"><a href="/pages/faq.html">FAQ</a></li>
+              <li class="mb-2"><a href="/pages/support.html">Support</a></li>
+              <li class="mb-2"><a>Survey Board</a></li>
+              <li class="mb-2"><a>Profile Edit</a></li>
+              <div class="gap-2 flex sm:hidden">
+                <a class="btn btn-primary btn-outline" href="/pages/register.html"
+                  >Register</a
+                >
+                <a class="btn btn-primary" href="/pages/login.html">Login</a>
+              </div>
             </ul>
           </div>
           <a class="btn btn-ghost normal-case text-xl" href="/index.html"
-            >daisyUI</a
+            >Enviromental Surveys</a
           >
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a href="/pages/faq.html">FAQ</a></li>
             <li><a href="/pages/support.html">Support</a></li>
-            <li tabindex="0">
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
+            <li><a>Survey Board</a></li>
+            <li><a>Profile Edit</a></li>
           </ul>
         </div>
-        <div class="navbar-end flex gap-2">
+        <div class="navbar-end gap-2 hidden sm:flex">
           <a class="btn btn-primary btn-outline" href="/pages/register.html"
             >Register</a
           >
@@ -71,9 +64,9 @@
     </header>
     <div class="min-h-[90vh] flex items-center justify-center px-2">
       <div
-        class="w-full max-w-4xl rounded px-8 py-6 flex flex-col lg:flex-row gap-4"
+        class="w-full max-w-4xl rounded flex flex-col lg:flex-row gap-4 shadow-xl"
       >
-      <div class="w-full p-6 lg:flex-[2] mt-4 sm:mt-0 text-lg bg-primary text-gray-800">
+      <div class="w-full p-8 lg:flex-[2] mt-4 sm:mt-0 text-lg bg-primary text-gray-300">
         <h2 class="text-3xl font-semibold mb-4">Contact Details</h2>
         <p class="mb-2"><strong>Email:</strong> contact@example.com</p>
         <p class="mb-2"><strong>Phone:</strong> +1 (123) 456-7890</p>
@@ -81,8 +74,8 @@
           <strong>Address:</strong> 123 Main Street, City, Country
         </p>
       </div>
-        <form class="w-full sm:w-2/3 p-6 mx-auto lg:flex-[4]">
-          <h1 class="text-3xl font-semibold mb-6 text-center">Contact Us</h1>
+        <form class="w-full sm:w-2/3 p-8 mx-auto lg:flex-[4]">
+          <h1 class="text-3xl font-semibold mb-6 text-center lg:text-left">Send a Message</h1>
           <div class="form-control w-full max-w-2xl mb-3">
             <input
               type="text"
@@ -101,7 +94,7 @@
           </div>
           <div class="form-control w-full max-w-2xl mb-3">
             <textarea
-              class="textarea textarea-bordered w-full h-32 shadow-lg"
+              class="textarea textarea-bordered w-full h-56 shadow-lg"
               placeholder="Message"
             ></textarea>
           </div>
