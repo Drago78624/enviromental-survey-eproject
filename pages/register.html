@@ -35,7 +35,9 @@
               <li class="mb-2"><a>Survey Board</a></li>
               <li class="mb-2"><a>Profile Edit</a></li>
               <div class="gap-2 flex sm:hidden">
-                <a class="btn btn-primary btn-outline" href="/pages/register.html"
+                <a
+                  class="btn btn-primary btn-outline"
+                  href="/pages/register.html"
                   >Register</a
                 >
                 <a class="btn btn-primary" href="/pages/login.html">Login</a>
@@ -75,16 +77,72 @@
       </div>
       <form
         id="registerForm"
-        class="sm:w-[300px] md:w-[350px] lg:w-[400px] mx-auto"
+        class="sm:w-[300px] md:w-[350px] lg:w-[400px] mx-auto p-2"
       >
-        <div class="form-control w-full max-w-2xl mb-3">
-          <input
-            type="text"
-            placeholder="Email Address"
-            class="input input-bordered w-full shadow-lg"
-            id="email"
-          />
-          <p id="emailError" class="text-error mt-1"></p>
+        <div class="flex gap-2">
+          <div class="form-control w-full max-w-2xl mb-3">
+            <input
+              type="text"
+              placeholder="Username"
+              class="input input-bordered w-full shadow-lg"
+              id="username"
+            />
+            <p id="usernameError" class="text-error mt-1 errors"></p>
+          </div>
+          <div class="form-control w-full max-w-2xl mb-3">
+            <input
+              type="number"
+              placeholder="Roll no/Employee no"
+              class="input input-bordered w-full shadow-lg"
+              id="rollNo"
+            />
+            <p id="rollNoError" class="text-error mt-1 errors"></p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <div class="form-control w-full max-w-2xl mb-3">
+            <select class="select select-bordered w-full max-w-xs" id="class">
+              <option disabled selected>Class</option>
+              <option>1st</option>
+              <option>2nd</option>
+              <option>3rd</option>
+              <option>4th</option>
+              <option>5th</option>
+              <option>6th</option>
+              <option>7th</option>
+              <option>8th</option>
+              <option>9th</option>
+              <option>10th</option>
+            </select>
+            <p id="classError" class="text-error mt-1 errors"></p>
+          </div>
+          <div class="form-control w-full max-w-2xl mb-3">
+            <select class="select select-bordered w-full max-w-xs" id="specification">
+              <option disabled selected>Specification</option>
+              <option>Staff</option>
+              <option>Student</option>
+            </select>
+            <p id="specificationError" class="text-error mt-1 errors"></p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <div class="form-control w-full max-w-2xl mb-3">
+            <select class="select select-bordered w-full max-w-xs" id="section">
+              <option disabled selected>Section</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+            <p id="sectionError" class="text-error mt-1 errors"></p>
+          </div>
+          <div class="form-control w-full max-w-2xl mb-3">
+            <input
+              type="date"
+              class="input input-bordered w-full shadow-lg"
+              id="date"
+            />
+            <p id="dateError" class="text-error mt-1 errors"></p>
+          </div>
         </div>
         <div class="form-control w-full max-w-2xl mb-3">
           <input
@@ -93,7 +151,7 @@
             class="input input-bordered w-full shadow-lg"
             id="password"
           />
-          <p id="passwordError" class="text-error mt-1"></p>
+          <p id="passwordError" class="text-error mt-1 errors"></p>
         </div>
         <div class="form-control w-full max-w-2xl mb-3">
           <input
@@ -102,7 +160,7 @@
             class="input input-bordered w-full shadow-lg"
             id="confirmPassword"
           />
-          <p id="confirmPasswordError" class="text-error mt-1"></p>
+          <p id="confirmPasswordError" class="text-error mt-1 errors"></p>
         </div>
         <div class="form-control w-full max-w-2xl mb-3">
           <button class="w-full btn btn-primary shadow-lg">Register</button>

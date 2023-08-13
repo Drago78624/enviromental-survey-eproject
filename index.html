@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="forest" id="themeTag">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -56,6 +56,7 @@
           </ul>
         </div>
         <div class="navbar-end gap-2 hidden sm:flex">
+          <button class="btn btn-primary" id="modeBtn">mode</button>
           <a class="btn btn-primary btn-outline" href="./pages/register.html"
             >Register</a
           >
@@ -296,5 +297,19 @@
       </div>
     </div>
     <script type="module" src="/main.js"></script>
+    <script>
+      const myElement = document.getElementById('themeTag');
+      const changeThemeButton = document.getElementById('modeBtn');
+
+    // Add a click event listener to the button
+    changeThemeButton.addEventListener('click', function() {
+      // Check the current theme and toggle to the opposite theme
+      const currentTheme = myElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'forest' ? 'lemonade' : 'forest';
+      
+      // Update the data-theme attribute value
+      myElement.setAttribute('data-theme', newTheme);
+    });
+    </script>
   </body>
 </html>

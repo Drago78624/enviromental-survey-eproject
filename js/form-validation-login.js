@@ -1,7 +1,7 @@
 import validator from "validator";
 
 // Add real-time validation on 'input' event for each input field
-document.getElementById("email").addEventListener("input", validateEmail);
+document.getElementById("username").addEventListener("input", validateUsername);
 document.getElementById("password").addEventListener("input", validatePassword);
 
 document
@@ -13,7 +13,7 @@ document
     clearErrorMessages();
 
     // Perform validation using validator.js
-    validateEmail();
+    validateUsername();
     validatePassword();
 
     // Check if any errors exist
@@ -29,13 +29,17 @@ document
     }
   });
 
-function validateEmail() {
-  const email = document.getElementById("email").value;
-  const emailError = document.getElementById("emailError");
-  if (!validator.isEmail(email)) {
-    emailError.textContent = "Invalid email format.";
+function validateUsername() {
+  const username = document.getElementById("username").value;
+  const usernameError = document.getElementById("usernameError");
+  if (
+    validator.isAlphanumeric(username) &&
+    validator.isLength(username, { min: 3, max: 20 })
+  ) {
+    usernameError.textContent = "";
   } else {
-    emailError.textContent = "";
+    usernameError.textContent =
+      "Username must be alphanumeric and have a length between 3 and 20 characters.";
   }
 }
 
