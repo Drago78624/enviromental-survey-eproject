@@ -16,6 +16,7 @@
     "daisyui": "^3.5.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
-    "validator": "^13.9.0"
+    "validator": "^13.9.0",
+    "vite-plugin-pages": "^0.31.0"
   }
 }
