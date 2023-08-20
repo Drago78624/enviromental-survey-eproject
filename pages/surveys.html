@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Board</title>
+</head>
+<body>
+    <header class="shadow-lg">
+        <div class="navbar bg-base-100 w-full lg:container mx-auto">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-30 p-2 shadow-lg bg-base-100 rounded-box w-52"
+              >
+                <li class="mb-2"><a href="./pages/faq.html">FAQ</a></li>
+                <li class="mb-2"><a href="./pages/support.html">Support</a></li>
+                <li class="mb-2"><a>Survey Board</a></li>
+                <li class="mb-2"><a>Profile Edit</a></li>
+                <div class="gap-2 flex sm:hidden">
+                  <a class="btn btn-primary btn-outline" href="./pages/register.html"
+                    >Register</a
+                  >
+                  <a class="btn btn-primary" href="./pages/login.html">Login</a>
+                </div>
+              </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl" href="/index.html"
+              >Enviromental Surveys</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="./pages/home.html">Home</a></li>
+              <li><a href="./pages/faq.html">FAQ</a></li>
+              <li><a href="./pages/support.html">Support</a></li>
+              <li><a>Survey Board</a></li>
+              <li><a>Profile Edit</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-2 hidden sm:flex">
+            <button class="btn btn-primary" id="modeBtn">mode</button>
+            <a class="btn btn-primary btn-outline" href="./pages/register.html"
+              >Register</a
+            >
+            <a class="btn btn-primary" href="./pages/login.html">Login</a>
+          </div>
+        </div>
+      </header>
+      <div class="drawer drawer-end z-20">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col items-center justify-center">
+          <!-- Page content here -->
+          <label
+            for="my-drawer-2"
+            class="btn btn-primary mt-4 drawer-button md:hidden"
+            >More Details</label
+          >
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer-2" class="drawer-overlay"></label>
+          <div class="flex flex-col bg-base-200 p-4">
+            <div class="flex justify-between items-center">
+              <h1 class="text-3xl font-bold mb-6">Total Surveys</h1>
+              <label for="my-drawer-2" class="inline-block mb-6 drawer-button"
+                >Close</label
+              >
+            </div>
+            <div class="h-[500px] overflow-y-scroll pr-4">
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-3"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+            </div>
+            <h1 class="text-3xl font-bold mb-6 mt-10">Participated Surveys</h1>
+            <div class="h-[500px] overflow-y-scroll pr-4">
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:container mx-auto mt-6 px-2">
+        <div class="flex">
+          <div class="md:flex-[3] flex-1 flex flex-col">
+            <h1 class="text-3xl font-bold mb-6">New Surveys</h1>
+            <div class="card w-full shadow-xl bg-base-100 mb-6">
+              <div class="card-body">
+                <h2 class="card-title">Card title!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Join</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-full shadow-xl bg-base-100 mb-6">
+              <div class="card-body">
+                <h2 class="card-title">Card title!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Join</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-full shadow-xl bg-base-100 mb-6">
+              <div class="card-body">
+                <h2 class="card-title">Card title!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Join</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-full shadow-xl bg-base-100 mb-6">
+              <div class="card-body">
+                <h2 class="card-title">Card title!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Join</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-full shadow-xl bg-base-100 mb-6">
+              <div class="card-body">
+                <h2 class="card-title">Card title!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Join</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:flex divider divider-horizontal"></div>
+          <div class="hidden md:flex md:flex-[2] flex-col">
+            <h1 class="text-3xl font-bold mb-6">Total Surveys</h1>
+            <div class="h-[500px] overflow-y-scroll pr-4">
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-3"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+            </div>
+            <h1 class="text-3xl font-bold mb-6 mt-10">Participated Surveys</h1>
+            <div class="h-[500px] overflow-y-scroll pr-4">
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <div
+                class="card w-full bg-primary text-primary-content shadow-xl mb-5"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="module" src="/main.js"></script>
+</body>
+</html>
