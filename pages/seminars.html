@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+      integrity="sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="shadow-lg">
+      <div class="navbar bg-base-100 w-full lg:container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-30 p-2 shadow-lg bg-base-100 rounded-box w-52"
+            >
+              <li class="mb-2"><a href="/index.html">Home</a></li>
+              <li class="mb-2"><a href="./pages/faq.html">FAQ</a></li>
+              <li class="mb-2"><a href="./pages/support.html">Support</a></li>
+              <li class="mb-2">
+                <a href="./pages/surveys.html">Survey Board</a>
+              </li>
+              <li class="mb-2"><a>Profile Edit</a></li>
+              <div class="gap-2 flex sm:hidden">
+                <a
+                  class="btn btn-primary btn-outline"
+                  href="./pages/register.html"
+                  >Register</a
+                >
+                <a class="btn btn-primary" href="./pages/login.html">Login</a>
+              </div>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="/index.html"
+            >Enviromental Surveys</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./pages/faq.html">FAQ</a></li>
+            <li><a href="./pages/support.html">Support</a></li>
+            <li><a href="./pages/surveys.html">Survey Board</a></li>
+            <li><a>Profile Edit</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-2 hidden sm:flex">
+          <button class="btn btn-primary" id="modeBtn">mode</button>
+          <a class="btn btn-primary btn-outline" href="./pages/register.html"
+            >Register</a
+          >
+          <a class="btn btn-primary" href="./pages/login.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex items-center lg:container mx-auto">
+      <div class="max-w-5xl w-full px-6 py-8 rounded-lg">
+        <h2 class="text-2xl font-semibold mb-4">Upcoming Seminars</h2>
+
+        <ul class="space-y-6">
+          <!-- Replace this with a loop to iterate through seminar data -->
+          <div class="card bg-neutral">
+            <div class="card-body">
+              <h3 class="text-xl font-semibold mb-2">Seminar Title</h3>
+              <p class="mb-2">Date: August 30, 2023</p>
+              <p class="mb-2">Location: Sample Location</p>
+              <p class="mb-2">Participants: 50</p>
+              <div class="flex items-center space-x-2">
+                <span class="">Presentation:</span>
+                <a href="#" class="text-primary hover:underline">Download</a>
+              </div>
+              <p class="mt-2">Impact: Lorem ipsum dolor sit amet...</p>
+            </div>
+          </div>
+          <div class="card bg-neutral">
+            <div class="card-body">
+              <h3 class="text-xl font-semibold mb-2">Seminar Title</h3>
+              <p class="mb-2">Date: August 30, 2023</p>
+              <p class="mb-2">Location: Sample Location</p>
+              <p class="mb-2">Participants: 50</p>
+              <div class="flex items-center space-x-2">
+                <span class="">Presentation:</span>
+                <a href="#" class="text-primary hover:underline">Download</a>
+              </div>
+              <p class="mt-2">Impact: Lorem ipsum dolor sit amet...</p>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
