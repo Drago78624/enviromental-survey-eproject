@@ -5,7 +5,10 @@ import fs from 'fs'
 export default defineConfig({
   build: {
     rollupOptions: {
-      input: getPagesInput(),
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        ...getPagesInput(),
+      },
     },
   },
 })
@@ -17,8 +20,8 @@ function getPagesInput() {
   // Read the files in the pages directory
   const files = fs.readdirSync(pagesDir)
 
-  // Filter out HTML files
-  const htmlFiles = files.filter(file => file.endsWith('.html'))
+  // Filter HTML files excluding index.html
+  const htmlFiles = files.filter(file => file.endsWith('.html') && file !== 'index.html')
 
   // Generate input entries for each HTML file
   htmlFiles.forEach(file => {
