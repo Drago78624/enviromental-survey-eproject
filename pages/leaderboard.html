@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest" id="themeTag">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="shadow-lg">
+      <div class="navbar bg-base-100 w-full lg:container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-30 p-2 shadow-lg bg-base-100 rounded-box w-52"
+            >
+              <li class="mb-2"><a href="/index.html">Home</a></li>
+              <li class="mb-2"><a href="./pages/faq.html">FAQ</a></li>
+              <li class="mb-2"><a href="./pages/support.html">Support</a></li>
+              <li class="mb-2">
+                <a href="./pages/surveys.html">Survey Board</a>
+              </li>
+              <li><a href="./pages/seminars.html">Seminars</a></li>
+              <div class="sm:hidden">
+                <div class="divider p-0 m-0"></div>
+                <li class="mb-2">
+                  <a href="./pages/manage-profile.html">Profile Edit</a>
+                </li>
+                <li class="mb-2"><a href="">Logout</a></li>
+              </div>
+              <div class="gap-2 flex sm:hidden">
+                <a
+                  class="btn btn-primary btn-outline"
+                  href="./pages/register.html"
+                  >Register</a
+                >
+                <a class="btn btn-primary" href="./pages/login.html">Login</a>
+              </div>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="/index.html"
+            >Enviromental Surveys</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./pages/faq.html">FAQ</a></li>
+            <li><a href="./pages/support.html">Support</a></li>
+            <li><a href="./pages/surveys.html">Survey Board</a></li>
+            <li><a href="./pages/seminars.html">Seminars</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-2">
+          <details class="dropdown hidden sm:flex">
+            <summary class="w-12 m-1 btn">
+              <div class="avatar">
+                <div class="w-12 rounded-full">
+                  <img src="/grow.jpg" />
+                </div>
+              </div>
+            </summary>
+            <ul
+              class="p-2 shadow menu dropdown-content z-[30] bg-base-100 rounded-box w-52"
+            >
+              <li><a href="/pages/manage-profile.html">Profile Edit</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </details>
+          <button class="btn btn-primary" id="modeBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-moon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+              />
+            </svg>
+          </button>
+          <a
+            class="btn btn-primary btn-outline hidden sm:flex"
+            href="./pages/register.html"
+            >Register</a
+          >
+          <a class="btn btn-primary hidden sm:flex" href="./pages/login.html"
+            >Login</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="lg:container mx-auto p-2">
+      <div class="mb-8">
+        <h1 class="text-4xl my-6 font-semibold text-center">Survey 1</h1>
+        <div class="collapse collapse-arrow">
+          <input type="radio" name="my-accordion-1" checked="checked" />
+          <div class="collapse-title text-xl font-medium bg-base-200">Results</div>
+          <div class="collapse-content">
+            <div class="overflow-x-auto shadow-lg p-4">
+              <table class="table text-lg">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td>
+                      <img class="w-10" src="/trophy.png" alt="" />
+                    </td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-8">
+        <h1 class="text-4xl my-6 font-semibold text-center">Survey 2</h1>
+        <div class="collapse collapse-arrow">
+          <input type="radio" name="my-accordion-1"/>
+          <div class="collapse-title text-xl font-medium bg-base-200">Results</div>
+          <div class="collapse-content">
+            <div class="overflow-x-auto shadow-lg p-4">
+              <table class="table text-lg">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td>
+                      <img class="w-10" src="/trophy.png" alt="" />
+                    </td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-8">
+        <h1 class="text-4xl my-6 font-semibold text-center">Survey 3</h1>
+        <div class="collapse collapse-arrow">
+          <input type="radio" name="my-accordion-1"/>
+          <div class="collapse-title text-xl font-medium bg-base-200">Results</div>
+          <div class="collapse-content">
+            <div class="overflow-x-auto shadow-lg p-4">
+              <table class="table text-lg">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td>
+                      <img class="w-10" src="/trophy.png" alt="" />
+                    </td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-8">
+        <h1 class="text-4xl my-6 font-semibold text-center">Survey 4</h1>
+        <div class="collapse collapse-arrow">
+          <input type="radio" name="my-accordion-1"/>
+          <div class="collapse-title text-xl font-medium bg-base-200">Results</div>
+          <div class="collapse-content">
+            <div class="overflow-x-auto shadow-lg p-4">
+              <table class="table text-lg">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td>
+                      <img class="w-10" src="/trophy.png" alt="" />
+                    </td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <tr class="hover">
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>100</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr class="hover">
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>96</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="hover">
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>94</td>
+                    <td>26/Aug/2023</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-primary py-12 mt-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between items-center mb-8">
+          <a href="#" class="text-primary-content text-xl font-bold"
+            >Environmental Survey</a
+          >
+          <nav>
+            <ul class="flex space-x-4">
+              <li>
+                <a
+                  class="text-primary-content hover:text-gray-300"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-primary-content hover:text-gray-300"
+                  href="./pages/faq.html"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-primary-content hover:text-gray-300"
+                  href="./pages/support.html"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-primary-content hover:text-gray-300"
+                  href="./pages/surveys.html"
+                  >Survey Board</a
+                >
+              </li>
+              <li>
+                <a class="text-primary-content hover:text-gray-300"
+                  >Profile Edit</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="text-primary-content text-sm">
+          © 2023 Environmental Survey. All rights reserved.
+        </p>
+        <p class="text-primary-content text-sm">
+          Created By M Kashif Khan, M Maaz Ahmed
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+    <script>
+      const myElement = document.getElementById("themeTag");
+      const changeThemeButton = document.getElementById("modeBtn");
+
+      // Add a click event listener to the button
+      changeThemeButton.addEventListener("click", function () {
+        // Check the current theme and toggle to the opposite theme
+        const currentTheme = myElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "forest" ? "lemonade" : "forest";
+
+        // Update the data-theme attribute value
+        myElement.setAttribute("data-theme", newTheme);
+      });
+    </script>
+  </body>
+</html>
