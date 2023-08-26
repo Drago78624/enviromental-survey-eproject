@@ -46,8 +46,14 @@ function validateUsername() {
 function validatePassword() {
   const password = document.getElementById("password").value;
   const passwordError = document.getElementById("passwordError");
-  if (!validator.isLength(password, { min: 6 })) {
-    passwordError.textContent = "Password must be at least 6 characters long.";
+  if (!validator.isStrongPassword(password, {
+    minLength: 8,
+    minLowercase: 0,
+    minUppercase: 0,
+    minNumbers: 1,
+    minSymbols: 0,
+  })) {
+    passwordError.textContent = "Password must be 8+ characters and include at least 1 number.";
   } else {
     passwordError.textContent = "";
   }

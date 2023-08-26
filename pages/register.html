@@ -117,7 +117,10 @@
             <p id="classError" class="text-error mt-1 errors"></p>
           </div>
           <div class="form-control w-full max-w-2xl mb-3">
-            <select class="select select-bordered w-full max-w-xs" id="specification">
+            <select
+              class="select select-bordered w-full max-w-xs"
+              id="specification"
+            >
               <option disabled selected>Specification</option>
               <option>Staff</option>
               <option>Student</option>
@@ -125,24 +128,14 @@
             <p id="specificationError" class="text-error mt-1 errors"></p>
           </div>
         </div>
-        <div class="flex gap-2">
-          <div class="form-control w-full max-w-2xl mb-3">
-            <select class="select select-bordered w-full max-w-xs" id="section">
-              <option disabled selected>Section</option>
-              <option>A</option>
-              <option>B</option>
-              <option>C</option>
-            </select>
-            <p id="sectionError" class="text-error mt-1 errors"></p>
-          </div>
-          <div class="form-control w-full max-w-2xl mb-3">
-            <input
-              type="date"
-              class="input input-bordered w-full shadow-lg"
-              id="date"
-            />
-            <p id="dateError" class="text-error mt-1 errors"></p>
-          </div>
+        <div class="form-control w-full mb-3">
+          <select class="select select-bordered w-full " id="section">
+            <option disabled selected>Section</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+          <p id="sectionError" class="text-error mt-1 errors"></p>
         </div>
         <div class="form-control w-full max-w-2xl mb-3">
           <input
