@@ -1,4 +1,4 @@
-# Netflify
+# Netlify
 https://enviromental-survey.netlify.app/
 
 # Todos
