@@ -21,7 +21,7 @@ function validateInput(input, errorElement) {
   switch (input.id) {
     case 'username':
       if (!validator.isAlphanumeric(inputValue) || !validator.isLength(inputValue, { min: 3, max: 20 })) {
-        errorMessage = 'Username must contain letters and numbers';
+        errorMessage = 'Username must be alphanumeric and have a length between 3 and 20 characters.';
       }
       break;
 
@@ -47,8 +47,14 @@ function validateInput(input, errorElement) {
       break;
 
     case 'password':
-      if (!validator.isStrongPassword(inputValue)) {
-        errorMessage = 'Password Must be Strong';
+      if (!validator.isStrongPassword(password, {
+        minLength: 8,
+        minLowercase: 0,
+        minUppercase: 0,
+        minNumbers: 1,
+        minSymbols: 0,
+      })) {
+        errorMessage = 'Password must be 8+ characters and include at least 1 number.';
       }
       break;
 
