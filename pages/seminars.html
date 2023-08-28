@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="forest" id="themeTag">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,6 +44,14 @@
                 <a href="./pages/surveys.html">Survey Board</a>
               </li>
               <li class="mb-2"><a href="./pages/seminars.html">Seminars</a></li>
+              <li><a href="./pages/leaderboard.html">Leaderboard</a></li>
+              <div class="sm:hidden">
+              <div class="divider p-0 m-0"></div>
+                <li class="mb-2">
+                  <a href="./pages/manage-profile.html">Profile Edit</a>
+                </li>
+                <li class="mb-2"><a href="">Logout</a></li>
+              </div>
               <div class="gap-2 flex sm:hidden">
                 <a
                   class="btn btn-primary btn-outline"
@@ -65,11 +73,12 @@
             <li><a href="./pages/support.html">Support</a></li>
             <li><a href="./pages/surveys.html">Survey Board</a></li>
             <li><a href="./pages/seminars.html">Seminars</a></li>
+            <li><a href="./pages/leaderboard.html">Leaderboard</a></li>
           </ul>
         </div>
-        <div class="navbar-end gap-2 hidden sm:flex">
-          <details class="dropdown">
-            <summary class="my-1 btn">
+        <div class="navbar-end gap-2">
+          <details class="dropdown hidden sm:flex">
+            <summary class="w-12 m-1 btn">
               <div class="avatar">
                 <div class="w-12 rounded-full">
                   <img src="/grow.jpg" />
@@ -97,6 +106,14 @@
               />
             </svg>
           </button>
+          <a
+            class="btn btn-primary btn-outline hidden sm:flex"
+            href="./pages/register.html"
+            >Register</a
+          >
+          <a class="btn btn-primary hidden sm:flex" href="./pages/login.html"
+            >Login</a
+          >
         </div>
       </div>
     </header>
@@ -110,7 +127,7 @@
 
           <ul class="space-y-6">
             <!-- Replace this with a loop to iterate through seminar data -->
-            <div class="card bg-neutral">
+            <div class="card bg-neutral text-neutral-content">
               <div class="card-body">
                 <h3 class="text-xl font-semibold mb-2">Seminar Title</h3>
                 <p class="mb-2">Date: August 30, 2023</p>
@@ -123,7 +140,7 @@
                 <p class="mt-2">Impact: Lorem ipsum dolor sit amet...</p>
               </div>
             </div>
-            <div class="card bg-neutral">
+            <div class="card bg-neutral text-neutral-content">
               <div class="card-body">
                 <h3 class="text-xl font-semibold mb-2">Seminar Title</h3>
                 <p class="mb-2">Date: August 30, 2023</p>
@@ -141,5 +158,19 @@
       </div>
     </main>
     <script type="module" src="/main.js"></script>
+    <script>
+      const myElement = document.getElementById("themeTag");
+      const changeThemeButton = document.getElementById("modeBtn");
+
+      // Add a click event listener to the button
+      changeThemeButton.addEventListener("click", function () {
+        // Check the current theme and toggle to the opposite theme
+        const currentTheme = myElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "forest" ? "lemonade" : "forest";
+
+        // Update the data-theme attribute value
+        myElement.setAttribute("data-theme", newTheme);
+      });
+    </script>
   </body>
 </html>
